@@ -1,0 +1,176 @@
+<style>
+    .text-white{
+        color:rgb(0, 0, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        
+    }
+
+
+
+    .card {
+    /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        height: 350px;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+
+
+
+
+  
+
+</style>
+<body  style="background-color: #ffffff;">
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.home{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  overflow: hidden;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    padding: none;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    margin-top: 30px;
+    display: block;
+    padding: none;
+    text-align: left;
+  }
+  .topnav.responsive .button1 {
+    margin-left: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .topnav.responsive .home{
+    float: none;
+    margin-top: 60px;
+    display: block;
+    padding: none;
+    text-align: left;
+  }
+
+ 
+}
+    .oreva{
+        font-family: cursive;
+    }
+    .oreva:hover{
+        background-color: #ddd;
+        border: #1e1d1d 1px solid;
+        color: #1e1d1d;
+    }
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <img src="https://www.pinclipart.com/picdir/big/519-5197755_news-clipart.png" style="float: left; padding: 10px;" height="60px" width="80px">
+        <label class="navbar-brand" style="color: beige;font-family: cursive;font-size: 30px;float: left; margin-top:3px;margin-bottom:3px;;margin-right: 2px; padding: 10px">Reporte_R</label>
+        
+
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<img src="https://o.remove.bg/downloads/6e38f96c-ffb3-4a20-98a8-7d76883e1bf5/Frame_1__4_-removebg-preview.png" style="float: right; margin-top: 30px;" width="530px" height="430px">
+<div style="margin-left: 30px; font-family: cursive; font-size: larger;">
+    <h1>Hello User</h1>
+    <p>Want to read some fresh headlines</p>
+    <p>You are at the right place</p>
+    <p>We here at Reporte_R provide you with daily news</p>
+    <p>You are just a finger touch away to explore the world</p>
+    <br>
+    <button class="oreva" onclick="window.location.href='/Explore'" style="padding: 6px; border-radius: 7px;color: #ddd; font-size: 40px;background-color: #1e1d1d;box-shadow:0px 5px #9d9d9d;">Explore</button>
+</div>
+</body>
+</html>

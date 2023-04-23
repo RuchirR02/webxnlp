@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    .text-white{
+        color:rgb(0, 0, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    
+</style>
+<style>
+    .bg-img {
+      background-image: url('https://github.com/Sem6-Mp/Book_recomm/blob/main/templates/images/overlay.png?raw=true');
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+          
+    }
+
+    .card {
+    /* Add shadows to create the "card" effect */
+        box-shadow: 0 3px 8px 0 rgba(255, 255, 255, 0.177);
+        transition: 0.3s;
+        background-color: #e8e8e8;
+        border-radius: 3%;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 16px 30px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+
+    </style>
+<body >
+
+
+    <style>
+    
+    
+    
+        .card {
+        /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            height: 350px;
+        }
+    
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+    
+    
+    
+    
+      
+    
+    </style>
+    <body  style="background-color: #ffffff;">
+    
+    
+        <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .home{
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      overflow: hidden;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    .button1 {
+      background-color: white; /* Green */
+      border: none;
+      border-radius: 10%;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 3px;
+      position: relative;
+      font-size: 16px; 
+      transition-duration: 0.4s;
+    }
+    
+    .button1:hover {
+      background-color: black; /* Green */
+      border: 2px solid white;
+      color: rgb(255, 255, 255);
+     
+    }
+    
+    .button2 {
+        transition-duration: 0.4s;
+      background-color: transparent;
+      border: 2px solid white;
+      position: relative;
+      margin-top: 3px;
+      border-radius: 10%;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .button2:hover {
+      background-color: rgb(255, 255, 255); /* Green */
+      border: 2px solid rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        padding: none;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        margin-top: 30px;
+        display: block;
+        padding: none;
+        text-align: left;
+      }
+      .topnav.responsive .button1 {
+        margin-left: 5px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .topnav.responsive .home{
+        float: none;
+        margin-top: 60px;
+        display: block;
+        padding: none;
+        text-align: left;
+      }
+    
+   
+    }
+
+    .ok{
+        font-size: small;
+        transition-duration: 200ms;
+    }
+    .ok:hover{
+        font-size: medium;
+    }
+     
+    </style>
+    </head>
+    <body>
+    
+    <div class="topnav" id="myTopnav">
+        <img src="https://www.pinclipart.com/picdir/big/519-5197755_news-clipart.png" style="float: left; padding: 10px;" height="60px" width="80px">
+        <label class="navbar-brand" style="color: beige;font-family: cursive;font-size: 30px;float: left; margin-top:3px;margin-bottom:3px;;margin-right: 2px; padding: 10px">Reporte_R</label>
+    
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    
+
+ 
+
+    <div class="container">
+      <br>
+   <label class="ok" style="color: #333;" onclick="window.location.href='/'">Back to home >>></label>
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1 class="text-white" style="font-size:50px;color: #333;"><b>Search for categories, headlines or anything</b></h1>
+                <form action="/Explore_news" method="post">
+                    <input style="box-shadow:0 3px 8px 0 rgb(145, 145, 145);" name="user_input" type="text" class="form-control"><br>
+                    <input type="submit" style="color: #000; " class="btn btn-lg btn-warning">
+                </form>
+                
+            </div>
+
+            
+
+            {% if data %}
+             {% for i in data %}
+                <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <br>
+                            <center><img class="card-img-top" height="30px" src="https://th.bing.com/th/id/R.c19e0b4afbb6cbf70f2543f7f95331e1?rik=Om8DSNLGGH%2fZDA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_224040.png&ehk=gpyfc9AEkT%2b4%2bqfETBLyY22zhRZUbx%2fQLF0VzFCBMco%3d&risl=&pid=ImgRaw&r=0">
+                                <br><br></center>
+                            <p class="text-white" style="float: right;font-size: 10px;">{{i[2]}}</p>
+                            <h4 style="margin-left: 5px;" class="text-white"><b>{{i[0]}}</b></h4>
+                            <h5 style="margin-left: 5px;" class="text-white">{{i[1]}}</h5>
+                            
+                            <br>
+                            <center><button style="color:rgb(255, 255, 255); background-color: #333; padding: 5px;font-size: large; margin-bottom: 5px;" onclick="window.location.href='{{i[3]}}'">Read More</button></center>
+                        </div>
+                    </div>
+                </div>
+             {% endfor %}
+
+            {% endif %}
+
+            
+            {% if auth_data %}
+            <h2 class="text-white" style="font-size:35px;color: #333;margin-top: 480px;">Other books by {{auth_data[1][1]}}</h2>
+             {% for i in auth_data %}
+                <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <br>
+                            <center><img class="card-img-top" height="200px" src="{{i[2]}}">
+                                <br><br>
+                            <p class="text-white">{{i[0]}}</p>
+                            <h4 class="text-white">{{i[1]}}</h4></center>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+             {% endfor %}
+
+            {% endif %}
+
+
+
+        </div>
+    </div>
+
+</body>
+</html>
